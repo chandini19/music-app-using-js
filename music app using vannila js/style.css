@@ -1,0 +1,133 @@
+*{
+    margin:0;
+  padding:0;
+  box-sizing : border-box;
+
+}
+
+body{
+       font-family: 'Montserrat', sans-serif;
+       opacity: 0.8;
+    
+}
+.img{
+
+    background-image: url('./images/pngkey.com-aliens-png-1242094.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.1;
+    filter:alpha(opacity=40);
+    height:70%;
+    width:70%;
+    z-index:0.1;
+}
+
+.app {
+    height: 100vh; /* for full screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* top right bottom left */
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+header p{
+    font-size: 20px;
+}
+
+.pads{
+    background-color: lightblue;
+    width: 100%;
+    display: flex;
+    opacity: 0.5;
+}
+/* used to select all the divs in pad*/
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex:1; /* to strech the pads */
+    border-color: burlywood;
+}
+
+    .pad1{
+        background-color: lightpink;
+    }
+
+    .pad2{
+        background-color: lightseagreen;
+    }
+
+    .pad3{
+        background-color: lightslategrey;
+    }
+
+    .pad4{
+        background-color: lightsalmon;
+    }
+
+    .pad5{
+        background-color: lightyellow;
+    }
+
+    .pad6{
+        background-color: rgb(223, 195, 231);
+    }
+
+    .pad7{
+        background-color: rgb(206, 206, 123);
+    }
+
+    .pad8{
+        background-color: rgb(87, 114, 119);
+    }
+
+    .pad9{
+        background-color: rgb(141, 93, 115);
+    }
+
+    .pad10{
+        background-color: rgb(61, 5, 124);
+    }
+
+    .pad11{
+        background-color: rgb(235, 150, 164);
+    }
+
+    .pad12{
+        background-color: rgb(116, 206, 113);
+    }
+/*keyframes gives the starting and the end point of something in animation*/
+    @keyframes jump{
+        0%{
+            bottom: 50%;
+            left: 0%;
+        }
+        50%{
+            bottom: 50%;
+            left: 50%;
+        
+        }
+        100%{
+            bottom: 100%;
+            left: 0%;
+        
+        }
+        }
+
+    .visual > div {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        bottom: 0%;
+        left: 20%;
+        bottom: 0%;
+        z-index: -1; /* to hide the balls behind the pads */
+    }
+
